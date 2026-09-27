@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="order-page-body">
+    <main class="order-page">
+        <section class="order-shell">
+            <div class="order-form-wrap">
+                <div class="order-header">
+                    <span class="order-badge">Order Form</span>
+                    <h1>Complete Your Order</h1>
+                </div>
+
+                <form id="order-form" class="order-form">
+                    <div class="form-grid">
+                        <label>
+                            Full Name
+                            <input type="text" id="customer-name" name="name" placeholder="Your name" required>
+                        </label>
+
+                        <label>
+                            Phone Number
+                            <input type="tel" id="customer-phone" name="phone" placeholder="Your phone number" required>
+                        </label>
+
+                        <label>
+                            City
+                            <input type="text" id="customer-city" name="city" placeholder="Your city" required>
+                        </label>
+
+                        <label>
+                            Payment Method
+                            <select id="payment-method" name="payment">
+                                <option value="Cash on Delivery">Cash on Delivery</option>
+                                <option value="Card">Card</option>
+                                <option value="Bank Transfer">Bank Transfer</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <label class="full-width">
+                        Notes
+                        <textarea id="customer-notes" name="notes" rows="4" placeholder="Add any details about your order"></textarea>
+                    </label>
+
+                    <div id="order-success" class="order-success" aria-live="polite"></div>
+                    <button class="submit-order-btn" type="submit">Send Order</button>
+                </form>
+            </div>
+
+            <aside class="order-summary">
+                <h2>Order Summary</h2>
+                <div id="order-items" class="order-items"></div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <strong id="summary-total">$0</strong>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="#">WhatsApp</a>
+            <a href="#">Facebook</a>
+        </div>
+        <p>Demo page only.</p>
+    </footer>
+
+    <script src="order.js"></script>
+</body>
+</html>

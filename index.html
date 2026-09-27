@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maz store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="foto">
+        <header>
+            <h3>maz store</h3>
+            <nav>
+                <a href="#top">home</a>
+                <a href="#shop">shop</a>
+                <a href="#about">about</a>
+                <a href="#contact">contact</a>
+                <a href="#cart">cart</a>
+            </nav>
+            <div class="header-actions">
+                <input type="text" placeholder="Search watches...">
+                <button class="cart-button" type="button">Cart <span id="cart-badge">0</span></button>
+            </div>
+        </header>
+
+        <main>
+            <section id="top" class="hero">
+                <div class="hero-text">
+                    <h1 class="t">TIME,</h1>
+                    <h1 class="r">REDEFINED.</h1>
+                    <div class="p">
+                        <p>time is the continuous progression of events</p>
+                        <p>from the past, through the present, and into the</p>
+                        <p>future.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <section id="shop" class="shop">
+        <div class="section-title">
+            <h2>Featured Watches</h2>
+        </div>
+
+        <div class="products">
+            <article class="product-card" data-id="1" data-name="Classic Watch">
+                <img src="e34e0a078e1384137a2c8ecf9c0f105b.jpg" alt="Classic Watch">
+                <div class="card-info">
+                    <h3>Classic Watch</h3>
+                    <p class="price">السعر: 299$</p>
+                    <button class="add-cart-btn" type="button" data-id="1">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="2" data-name="Luxury Watch">
+                <img src="3ae7ddfe638c1475310f8c0a95a82fab.jpg" alt="Luxury Watch">
+                <div class="card-info">
+                    <h3>Luxury Watch</h3>
+                    <p class="price">السعر: 399$</p>
+                    <button class="add-cart-btn" type="button" data-id="2">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="3" data-name="Elite Watch">
+                <img src="5a1433e70d7cc9475ffb929c3b0cefd7.jpg" alt="Elite Watch">
+                <div class="card-info">
+                    <h3>Elite Watch</h3>
+                    <p class="price">السعر: 499$</p>
+                    <button class="add-cart-btn" type="button" data-id="3">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="4" data-name="Royal Watch">
+                <img src="43f5c338416e8f0f5cf5a34cd9b1b5d8.jpg" alt="Royal Watch">
+                <div class="card-info">
+                    <h3>Royal Watch</h3>
+                    <p class="price">السعر: 549$</p>
+                    <button class="add-cart-btn" type="button" data-id="4">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="5" data-name="Titan Watch">
+                <img src="6a24c3da002c0fb92766e7fa7d1f516e.jpg" alt="Titan Watch">
+                <div class="card-info">
+                    <h3>Titan Watch</h3>
+                    <p class="price">السعر: 649$</p>
+                    <button class="add-cart-btn" type="button" data-id="5">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="6" data-name="Eclipse Watch">
+                <img src="501cacc31da7a741e46b3017da475d6c.jpg" alt="Eclipse Watch">
+                <div class="card-info">
+                    <h3>Eclipse Watch</h3>
+                    <p class="price">السعر: 799$</p>
+                    <button class="add-cart-btn" type="button" data-id="6">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="7" data-name="Monarch Watch">
+                <img src="3e07697c295a2c3eb29b719ed6dc7e00.jpg" alt="Monarch Watch">
+                <div class="card-info">
+                    <h3>Monarch Watch</h3>
+                    <p class="price">السعر: 899$</p>
+                    <button class="add-cart-btn" type="button" data-id="7">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="8" data-name="Aurora Watch">
+                <img src="bfd634af2a1ab20782a03a06f57166ba.jpg" alt="Aurora Watch">
+                <div class="card-info">
+                    <h3>Aurora Watch</h3>
+                    <p class="price">السعر: 999$</p>
+                    <button class="add-cart-btn" type="button" data-id="8">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="9" data-name="Heritage Watch">
+                <img src="75337d9a3925924c82c2baf44a0ca012.jpg" alt="Heritage Watch">
+                <div class="card-info">
+                    <h3>Heritage Watch</h3>
+                    <p class="price">السعر: 1099$</p>
+                    <button class="add-cart-btn" type="button" data-id="9">Add to cart</button>
+                </div>
+            </article>
+        </div>
+
+        <div class="promo-banner">
+            <span class="promo-tag">خصم خاص</span>
+            <h3>تخفيضات حصرية على الساعات الفاخرة</h3>
+            <p>خصم يصل إلى 50% على أفضل الموديلات هذا شهر</p>
+        </div>
+
+        <div class="all-watches-section">
+            <div class="section-title">
+                <h2>All Watches</h2>
+            </div>
+            <div id="all-watches" class="all-watches-grid"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-box">
+            <h2>About Maz Store</h2>
+            <p>نحن متجر متخصص في الساعات الفاخرة والراقية، حيث نجمع بين التصميم العصري، الجودة العالية، والاهتمام بالتفاصيل. كل ساعة في متناولنا تم اختيارها بعناية لتناسب أسلوب الحياة اليومي والملابس الرسمية على حد سواء.</p>
+            <div class="about-stats">
+                <div>
+                    <strong>10+</strong>
+                    <span>سنوات خبرة</span>
+                </div>
+                <div>
+                    <strong>1.5k+</strong>
+                    <span>عميل راضٍ</span>
+                </div>
+                <div>
+                    <strong>24/7</strong>
+                    <span>دعم</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <p>Email:...............com</p>
+            <p>Phone: +0000000000000000</p>
+            <p>Location:...............</p>
+        </div>
+    </section>
+
+    <aside id="cart" class="cart-section">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <span id="cart-count">0</span>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+        <div class="cart-total-row">
+            <span>Total</span>
+            <strong id="cart-total">$0</strong>
+        </div>
+        <div class="cart-actions">
+            <button id="checkout-btn" class="checkout-btn" type="button">Order Now</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
